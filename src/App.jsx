@@ -1,4 +1,4 @@
-import React, { useState, useEffect, use } from 'react'
+import { useState, useEffect, use } from 'react'
 import Search from './components/search'
 import Spinner from './components/Spinner';
 import MovieCard from './components/MovieCard';
@@ -23,7 +23,7 @@ const App = () => {
   const [moviesList, setMoviesList] = useState([]);
   const [errorMessage, setErrorMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  
+
   const [trendingMovies, setTrendingMovies] = useState([]);
 
   // Debounce the search term to avoid too many API calls
